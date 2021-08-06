@@ -1,8 +1,3 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -11,7 +6,7 @@
   </a>
 
   <h3 align="center">Calculator -
-  <a href='https://mv-react-calculator.herokuapp.com/'> Live version</a></h3>
+  <a href='https://maosan132.github.io/calculator/'> Live version</a></h3>
 
   <p align="center">
     This project is part of the Microverse React Section!
