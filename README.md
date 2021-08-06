@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/maosan132/calculator/">
+    <img src="public/img/mLogo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Available Scripts
+  <h3 align="center">Calculator -
+  <a href='https://mv-react-calculator.herokuapp.com/'> Live version</a></h3>
 
-In the project directory, you can run:
+  <p align="center">
+    This project is part of the Microverse React Section!
+    <br />
+    <a href="https://github.com/maosan132/calculator/">Report Bug</a>
+    ·
+    <a href="https://github.com/maosan132/calculator/">Request Feature</a>
+  </p>
+</p>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [About the Project](#about-the-project)
+  * [Installation](#installation)
+  * [Built With](#built-with)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm test`
+This purpose of this project is to build a simple product that would assist us with our calculations, that is just fully-functional and it does not need to be beautiful and user-friendly (at least in its first version).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div align="center">
+![screenshot](./app_screenshot.png)
+</div>
 
-### `npm run build`
+<!-- ABOUT THE PROJECT -->
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Download or clone the [repo here](https://github.com/maosan132/calculator.git), enter the directory in the terminal and run the commands:
+* `npm i`
+* `npm run start`
+Your default browser should open the app at the localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
+This project was built using these technologies.
+* HTML
+* CSS3
+* React
+* Heroku
+* Babel
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- CONTACT -->
+## Contact
 
-### `npm run eject`
+👤 **Mauricio Santos**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Github: [@maosan132](https://github.com/maosan132)
+- Twitter: [@maosan132](https://twitter.com/maosan132)
+- Linkedin: [maurisantos](https://www.linkedin.com/in/mauricsantos)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [Microverse](https://www.microverse.org/)
+* [The Odin Project](https://www.theodinproject.com/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🤝 Contributing
 
-## Learn More
+Contributions, issues and feature requests are welcome!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Feel free to check the [issues page](https://github.com/maosan132/rpg-game/issues).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork it (https://github.com/maosan132/rpg-game/fork)
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create a new Pull Request
 
-### Code Splitting
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Give a ⭐️ if you like this project!
 
-### Analyzing the Bundle Size
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is [MIT](lic.url) licensed.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[Go up](#Table-of-Contents)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
