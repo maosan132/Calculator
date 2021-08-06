@@ -32,7 +32,7 @@
 This purpose of this project is to build a simple product that would assist us with our calculations, that is just fully-functional and it does not need to be beautiful and user-friendly (at least in its first version).
 
 <div align="center">
-<img src="./app_screenshot.png" alt="screenshot">
+<img src="./calculator.png" alt="screenshot">
 </div>
 
 <!-- ABOUT THE PROJECT -->
