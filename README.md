@@ -29,7 +29,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This purpose of this project is to build a simple product that would assist us with our calculations, that is just fully-functional and it does not need to be beautiful and user-friendly (at least in its first version).
+The purpose of this project is to build a simple product that would assist us with our calculations, that is just fully-functional and it does not need to be beautiful and user-friendly (at least in its first version).
 
 <div align="center">
 <img src="./calculator.png" alt="screenshot"  width="550" height="480">
@@ -70,9 +70,9 @@ This project was built using these technologies.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/maosan132/rpg-game/issues).
+Feel free to check the [issues page](https://github.com/maosan132/calculator/issues).
 
-1. Fork it (https://github.com/maosan132/rpg-game/fork)
+1. Fork it (https://github.com/maosan132/calculator/fork)
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -84,7 +84,6 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
 
 
 [Go up](#Table-of-Contents)
