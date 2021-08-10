@@ -3,7 +3,7 @@ import Big from 'big-js';
 const operate = (numberOne, numberTwo, operation) => {
   const left = Big(numberOne);
   const right = Big(numberTwo);
-  let result = '';
+  let result = 0;
 
   switch (operation) {
     case '+':
