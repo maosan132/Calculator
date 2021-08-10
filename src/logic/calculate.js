@@ -8,7 +8,7 @@ import operate from './operate';
 
 const calculate = (obj, buttonName) => {
   const { next, operation, total } = obj;
-  let cloneObj = { ...obj };
+  const cloneObj = { ...obj };
 
   switch (buttonName) {
     case '0':
@@ -23,16 +23,16 @@ const calculate = (obj, buttonName) => {
     case '9':
       if (operation) {
         if (next) {
-          resultObj.next = next + buttonName;
+          cloneObj.next = next + buttonName;
         } else {
-          resultObj.next = buttonName;
+          cloneObj.next = buttonName;
         }
       } else if (next) {
-        resultObj.next = next + buttonName;
-        resultObj.total = null;
+        cloneObj.next = next + buttonName;
+        cloneObj.total = null;
       } else {
-        resultObj.next = buttonName;
-        resultObj.total = null;
+        cloneObj.next = buttonName;
+        cloneObj.total = null;
       }
       break;
     case 'AC':
@@ -46,7 +46,10 @@ const calculate = (obj, buttonName) => {
       break;
     default:
   }
-  return resultObj;
+
+  cloneObj.total = operate(total, next, operation);
+
+  return cloneObj;
 };
 
 export default calculate;
