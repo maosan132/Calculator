@@ -45,7 +45,7 @@ Your default browser should open the app at the localhost:3000
 
 ### Built With
 This project was built using these technologies.
-* HTML
+* HTML5
 * CSS3
 * React
 * Heroku
