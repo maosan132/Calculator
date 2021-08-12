@@ -2,13 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = ({ name }) => (
-  <div>
-    {name}
-  </div>
+  <>
+    <button type="button">{name}</button>
+  </>
 );
 
 Button.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
+};
+
+Button.defaultProps = {
+  name: '',
 };
 
 export default Button;
