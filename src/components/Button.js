@@ -21,7 +21,6 @@ Button.propTypes = {
 
 Button.defaultProps = {
   name: '',
-  handleClick: undefined,
 };
 
 export default Button;
