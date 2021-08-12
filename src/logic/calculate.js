@@ -5,6 +5,7 @@ const calculate = (obj, buttonName) => {
   const cloneObj = { ...obj }; // Added to avoid changing the original object
   const operators = ['+', 'X', 'x', '-', '/'];
   const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  // console.log(buttonName);
 
   switch (true) {
     case buttonName === 'AC':
@@ -42,7 +43,7 @@ const calculate = (obj, buttonName) => {
       cloneObj.total = total ? total + buttonName : buttonName;
       break;
     default:
-      return {};
+      return null;
   }
   return cloneObj;
 };

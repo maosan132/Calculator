@@ -1,32 +1,38 @@
 import Big from 'big-js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const left = Big(numberOne);
-  const right = Big(numberTwo);
+  const num1 = Big(numberOne);
+  const num2 = Big(numberTwo);
+  // const operators = ['+', '-', 'X', '/', '%'];
   let result = 0;
 
   switch (operation) {
     case '+':
-      result = `${left.plus(right)}`;
+      result = `${num1.plus(num2)}`;
       break;
     case '-':
-      result = `${left.minus(right)}`;
+      result = `${num1.minus(num2)}`;
       break;
     case 'x':
     case 'X':
-      result = `${left.times(right)}`;
+      result = `${num1.times(num2)}`;
       break;
     case '÷':
     case '/':
-      result = right === 0 ? 'Divided by zero Error' : `${left.div(right)}`;
+      // result = num2 === 0 ? 'Divided by zero Error' : `${num1.div(num2)}`;
+      try {
+        result = `${num1.div(num2)}`;
+      } catch (e) {
+        result = 'Divided by zero Error';
+      }
       break;
     case '%':
-      result = `${left.mod(right)}`;
+      result = `${num1.mod(num2)}`;
       break;
     default:
       result = null;
   }
-  return result;
+  return result.toString();
 };
 
 export default operate;
