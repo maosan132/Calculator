@@ -2,8 +2,8 @@ import operate from './operate';
 
 const calculate = (obj, buttonName) => {
   const { next, operation, total } = obj;
-  const cloneObj = { ...obj };
-  const operators = ['+', 'X', '-', '/'];
+  const cloneObj = { ...obj }; // Added to avoid changing the original object
+  const operators = ['+', 'X', 'x', '-', '/'];
   const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
   switch (true) {
