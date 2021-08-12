@@ -1,54 +1,49 @@
 import operate from './operate';
 
-// obj = {
-//   total: '',
-//   next: '',
-//   operator
-// }
-
 const calculate = (obj, buttonName) => {
   const { next, operation, total } = obj;
   const cloneObj = { ...obj };
+  const operators = ['+', 'X', '-', '/'];
+  const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-  switch (buttonName) {
-    case '0':
-    case '1':
-    case '2':
-    case '3':
-    case '4':
-    case '5':
-    case '6':
-    case '7':
-    case '8':
-    case '9':
-      if (operation) {
-        if (next) {
-          cloneObj.next = next + buttonName;
-        } else {
-          cloneObj.next = buttonName;
-        }
-      } else if (next) {
-        cloneObj.next = next + buttonName;
-        cloneObj.total = null;
-      } else {
-        cloneObj.next = buttonName;
-        cloneObj.total = null;
+  switch (true) {
+    case buttonName === 'AC':
+      cloneObj.total = 0;
+      cloneObj.next = 0;
+      cloneObj.operation = null;
+      break;
+    case buttonName === '.':
+      cloneObj.total = 0;
+      cloneObj.next = 0;
+      cloneObj.operation = null;
+      break;
+    case buttonName === '+/-':
+      cloneObj.total = (total * (-1)).toString();
+      cloneObj.next = (next * (-1)).toString();
+      break;
+    case buttonName === '%':
+      cloneObj.next = (0.01 * total).toString();
+      cloneObj.operation = '%';
+      break;
+    case buttonName === '=':
+      if (total && next && operation) {
+        cloneObj.total = operate(total, next, operation);
+        cloneObj.next = null;
+        cloneObj.operation = null;
       }
       break;
-    case 'AC':
+    case operators.includes(buttonName):
+      cloneObj.operation = buttonName;
       break;
-    case '.':
+    case operation && digits.includes(buttonName):
+      cloneObj.next = next ? next + buttonName : buttonName;
       break;
-    case '=':
-    case '+/-':
-      break;
-    case '%':
+    case digits.includes(buttonName):
+      cloneObj.total = total ? total + buttonName : buttonName;
       break;
     default:
+      return {};
   }
-
-  cloneObj.total = operate(total, next, operation);
-
   return cloneObj;
 };
 
