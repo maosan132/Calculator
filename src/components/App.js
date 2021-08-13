@@ -26,11 +26,7 @@ class App extends React.Component {
     if (operation === null) {
       result = total;
     } else if (operation === '+/-') {
-      if (next === null || next === '0') {
-        result = total;
-      } else {
-        result = next;
-      }
+      result = (next === null || next === '0') ? total : next;
     } else {
       result = next === null ? operation : next;
     }

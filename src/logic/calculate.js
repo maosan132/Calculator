@@ -14,19 +14,15 @@ const calculate = (obj, buttonName) => {
       cloneObj.operation = null;
       break;
     case buttonName === '.':
-      cloneObj.total = 0;
-      cloneObj.next = 0;
-      cloneObj.operation = null;
-
       if (next) {
         if (next.includes('.')) {
           cloneObj = {};
         } else {
           cloneObj.next = `${next}.`;
         }
-      } else if (operation) {
-        cloneObj.next = '0.';
-      } else if (total) {
+      }
+      if (operation) cloneObj.next = '0.';
+      if (total) {
         if (total.includes('.')) {
           cloneObj = {};
         } else {
