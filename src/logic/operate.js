@@ -30,7 +30,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = `${num1.mod(num2)}`;
       break;
     default:
-      result = null;
+      throw new Error(`Invalid operator ${operation}`);
   }
   return result.toString();
 };

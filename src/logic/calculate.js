@@ -2,7 +2,7 @@ import operate from './operate';
 
 const calculate = (obj, buttonName) => {
   const { next, operation, total } = obj;
-  const cloneObj = { ...obj }; // Added to avoid changing the original object
+  let cloneObj = { ...obj }; // Added to avoid changing the original object
   const operators = ['+', 'X', 'x', '-', '/'];
   const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   // console.log(buttonName);
@@ -17,6 +17,24 @@ const calculate = (obj, buttonName) => {
       cloneObj.total = 0;
       cloneObj.next = 0;
       cloneObj.operation = null;
+
+      if (next) {
+        if (next.includes('.')) {
+          cloneObj = {};
+        } else {
+          cloneObj.next = `${next}.`;
+        }
+      } else if (operation) {
+        cloneObj.next = '0.';
+      } else if (total) {
+        if (total.includes('.')) {
+          cloneObj = {};
+        } else {
+          cloneObj.total = `${total}.`;
+        }
+      } else {
+        cloneObj.total = '0.';
+      }
       break;
     case buttonName === '+/-':
       cloneObj.total = (total * (-1)).toString();
