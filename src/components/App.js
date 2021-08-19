@@ -10,9 +10,17 @@ const App = () => {
   const [next, setNext] = useState(null);
   const [operation, setOperation] = useState(null);
 
-  handleClick(buttonName) {
-    const newState = calculate(this.state, buttonName);
-    this.setState(newState);
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  const handleClick = buttonName => {
+    const data = {total, next, operation};
+    const result = calculate(data, buttonName);
+
+    setTotal(result.total);
+    setNext(result.next);
+    setOperation(result.operation)
   }
 
   render() {
@@ -29,7 +37,7 @@ const App = () => {
     return (
       <div className="App">
         <Display className="display" result={result} />
-        <ButtonPanel clickHandler={this.handleClick} />
+        <ButtonPanel clickHandler={handleClick} />
       </div>
     );
   }
