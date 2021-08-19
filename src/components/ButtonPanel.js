@@ -9,52 +9,33 @@ const ButtonPanel = (props) => {
   const fourthRow = ['1', '2', '3', '+'];
   const fifthRow = ['0', '.', '='];
 
+  const buttonFactory = (row) => {
+    const x = row.map((item, index) => (
+      <Button
+        key={row[index]}
+        handleClick={(item) => props.clickHandler(item)}
+        name={item}
+      />
+    ));
+    return x;
+  };
+
   return (
     <>
       <div className="row1">
-        {firstRow.map((item, index) => (
-          <Button
-            key={firstRow[index]}
-            handleClick={(item) => props.clickHandler(item)}
-            name={item}
-          />
-        ))}
+        {buttonFactory(firstRow)}
       </div>
       <div className="row2">
-        {secondRow.map((item, index) => (
-          <Button
-            key={secondRow[index]}
-            handleClick={(item) => props.clickHandler(item)}
-            name={item}
-          />
-        ))}
+        {buttonFactory(secondRow)}
       </div>
       <div className="row3">
-        {thirdRow.map((item, index) => (
-          <Button
-            key={thirdRow[index]}
-            handleClick={(item) => props.clickHandler(item)}
-            name={item}
-          />
-        ))}
+        {buttonFactory(thirdRow)}
       </div>
       <div className="row4">
-        {fourthRow.map((item, index) => (
-          <Button
-            key={fourthRow[index]}
-            handleClick={(item) => props.clickHandler(item)}
-            name={item}
-          />
-        ))}
+        {buttonFactory(fourthRow)}
       </div>
       <div className="row5">
-        {fifthRow.map((item, index) => (
-          <Button
-            key={fifthRow[index]}
-            handleClick={(item) => props.clickHandler(item)}
-            name={item}
-          />
-        ))}
+        {buttonFactory(fifthRow)}
       </div>
     </>
   );
