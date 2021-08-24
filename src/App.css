@@ -2,7 +2,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -28,18 +31,18 @@ html {
   clear: right;
 }
 
-.ButtonPanel{
+.ButtonPanel {
   max-height: 100px;
   width: 700px;
 }
 
-.ButtonPanel > div{
+.ButtonPanel > div {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
 
 .ButtonPanel > div :last-child {
-  background-color: #F5913E;
+  background-color: #f5913e;
 }
 
 .zero-button {
