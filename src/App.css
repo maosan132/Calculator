@@ -1,3 +1,58 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  max-width: 700px;
+}
+
+.Display {
+  display: flex;
+  justify-content: flex-end;
+  background-color: darkgray;
+  min-height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  font-weight: 900;
+  font-size: 1.8rem;
+  align-items: center;
+  padding: 5px;
+  clear: right;
+}
+
+.ButtonPanel{
+  max-height: 100px;
+  width: 700px;
+}
+
+.ButtonPanel > div{
+  display: flex;
+  justify-content: space-evenly
+}
+
+.ButtonPanel > div :last-child {
+  background-color: #F5913E;
+}
+
+.row5 :first-child {
+  width: 50%;
+}
+
+button {
+  font-weight: 800;
+  font-size: 1.2rem;
+  height: 100px;
+  width: 25%;
+}
+
+button:hover {
+  background-color: burlywood !important;
 }
