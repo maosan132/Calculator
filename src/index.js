@@ -1,18 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './index.css';
 import App from './components/App';
+import Home from './pages/Home';
+import Quote from './pages/Quote';
 
 const Calculator = () => (
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/App" component={App} />
         <Route path="/Quote" component={Quote} />
       </Switch>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
 
