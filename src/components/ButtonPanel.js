@@ -21,7 +21,7 @@ const ButtonPanel = (props) => {
   };
 
   return (
-    <>
+    <div className="ButtonPanel">
       <div className="row1">
         {buttonFactory(firstRow)}
       </div>
@@ -37,7 +37,7 @@ const ButtonPanel = (props) => {
       <div className="row5">
         {buttonFactory(fifthRow)}
       </div>
-    </>
+    </div>
   );
 };
 
