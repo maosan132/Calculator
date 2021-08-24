@@ -13,7 +13,7 @@ const ButtonPanel = (props) => {
     const x = row.map((item, index) => (
       <Button
         key={row[index]}
-        handleClick={props.clickHandler(item)}
+        handleClick={(item) => props.clickHandler(item)}
         name={item}
         wide={item === '0'}
       />
