@@ -5,15 +5,19 @@ import './index.css';
 import App from './components/App';
 import Home from './pages/Home';
 import Quote from './pages/Quote';
+import Navbar from './components/Navbar';
 
 const Calculator = () => (
   <React.StrictMode>
     <Router>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/App" component={App} />
-        <Route path="/Quote" component={Quote} />
-      </Switch>
+      <container>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/App" component={App} />
+          <Route path="/Quote" component={Quote} />
+        </Switch>
+      </container>
     </Router>
   </React.StrictMode>
 );

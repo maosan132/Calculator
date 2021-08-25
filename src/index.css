@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding:30px;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -16,17 +17,53 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+h1, h2 {
+  margin-top: 0;
+  padding: 0 !important;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:indigo
 }
 
-.quoting {
-  margin-left: 1em;
-  
+h1 {
+  color: rgb(15, 233, 8)
+}
+
+/*  NAVBAR  */
+
+navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+navbar a {
+  display: inline-block;
+  height: 30px;
+  padding: 10px;
+}
+
+nav {
+ display: flex;
+ align-items: flex-start;
+}
+
+.nav a {
+  padding-top: 2px;
+}
+
+.nav a[href='/App'] {
+  border-left: 1px solid rgb(15, 233, 8);
+  border-right: 1px solid rgb(15, 233, 8);
+}
+
+/*  PAGES  */
+
+blockquote,  p{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+blockquote span {
+  float: right;
+  color: rgb(15, 233, 8)
 }
