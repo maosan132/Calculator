@@ -10,14 +10,12 @@ import Navbar from './components/Navbar';
 const Calculator = () => (
   <React.StrictMode>
     <Router>
-      <container>
-        <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/App" component={App} />
-          <Route path="/Quote" component={Quote} />
-        </Switch>
-      </container>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/App" component={App} />
+        <Route path="/Quote" component={Quote} />
+      </Switch>
     </Router>
   </React.StrictMode>
 );

@@ -61,9 +61,14 @@ nav {
 blockquote,  p{
   font-family:'Times New Roman', Times, serif;
   font-size: 18px;
+  text-align: justify;
+}
+
+blockquote {
+  margin-top: 
 }
 
 blockquote span {
   float: right;
-  color: rgb(15, 233, 8)
+  color: rgb(15, 233, 8);
 }
