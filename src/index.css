@@ -83,6 +83,14 @@ blockquote {
   text-decoration-line: underline;
 }
 
+p::first-letter {
+  font-size: 1.5em;
+}
+
+blockquote::first-letter {
+  font-size: 2em;
+}
+
 blockquote span {
   float: right;
   color: rgb(15, 233, 8);
