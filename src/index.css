@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  min-width: 700px;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -16,12 +17,75 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+h1,
+h2 {
+  margin-top: 0;
+  padding: 0 !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: indigo;
+}
+
+h1 {
+  color: rgb(15, 233, 8);
+  margin: 20px;
+}
+
+/*  NAVBAR  */
+
+.nav {
+  display: flex;
+  align-items: flex-start;
+}
+
+.nav a[href='/App'] {
+  border-left: 1px solid rgb(15, 233, 8);
+  border-right: 1px solid rgb(15, 233, 8);
+}
+
+.nav a[href='/Quote'] {
+  margin-right: 15px;
+}
+
+.nav a {
+  padding-top: 2px !important;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  border-top: rgb(15, 233, 8) solid 10px;
+}
+
+#navbar a {
+  display: inline-block;
+  height: 30px;
+  padding: 10px;
+}
+
+.home {
+  padding: 0 30px;
+}
+
+/*  PAGES  */
+
+blockquote,
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+blockquote {
+  margin-top: 200px;
+  font-size: 1.3em;
+  text-decoration-line: underline;
+}
+
+blockquote span {
+  float: right;
+  color: rgb(15, 233, 8);
+  padding-top: 15px;
+  font-size: 1.5em;
 }
