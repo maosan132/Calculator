@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router} from 'react-router-dom';
-import renderer from 'react-test-renderer';
-import NavBar from '../components/Navbar';
+import Renderer from 'react-test-renderer';
+import Navbar from '../components/Navbar';
 
 describe('Home', () => {
   it('renders correctly', () => {
-    const home = renderer
+    const home = Renderer
       .create(
         <>
           <Router>
-            <NavBar />
+            <Navbar />
           </Router>
           <h1>Math Magicians</h1>
           <p>
