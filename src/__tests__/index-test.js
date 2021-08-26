@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Renderer from 'react-test-renderer';
-import Display from '../components/Display';
 import App from '../components/App';
 import Home from '../pages/Home';
 import Quote from '../pages/Quote';
