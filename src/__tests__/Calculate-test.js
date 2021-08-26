@@ -12,9 +12,9 @@ describe('Use Operations', () => {
   const divideBtn = '/';
   const cleanBtn = 'AC';
 
-  const calculatorNegates= { total: 10, next: 0, operation: negateBtn };
+  const calculatorNegates = { total: 10, next: 0, operation: negateBtn };
   const calculatorSums = { total: 15, next: 20, operation: plusBtn };
-  const calculatorSubstracts = { total: 15, next: 20, operation: minusBtn };
+  const calculatorSubtracts = { total: 15, next: 20, operation: minusBtn };
   const calculatorMultiplies = { total: 15, next: 20, operation: timesBtn };
   const calculatorDivides = { total: 15, next: 5, operation: divideBtn };
   const calculatorCleans = { total: 15, next: 5, operation: cleanBtn };
@@ -31,7 +31,7 @@ describe('Use Operations', () => {
   });
 
   test('subtract the given numbers', () => {
-    const result = (Calculate(calculatorSubstracts, minusBtn));
+    const result = (Calculate(calculatorSubtracts, minusBtn));
     const result2 = Calculate(result, '=');
     expect(result2).toEqual({ next: null, operation: null, total: '-5' });
   });
@@ -54,10 +54,70 @@ describe('Use Operations', () => {
   });
 });
 
-describe ('Render Buttons', () => {
-  it('Should render AC', () => {
+describe('Render Buttons', () => {
+  it('Should display AC', () => {
     const { getByText } = render(<App />);
     const btnName = getByText(/AC/);
+    expect(btnName).toBeInTheDocument();
+  });
+
+  it('Should display button =', () => {
+    const { getByText } = render(<App />);
+    const btnName = getByText(/=/);
+    expect(btnName).toBeInTheDocument();
+  });
+
+  it('Should display button 1', () => {
+    const { getByText } = render(<App />);
+    const btnName = getByText(/1/);
+    expect(btnName).toBeInTheDocument();
+  });
+
+  it('Should display button 2', () => {
+    const { getByText } = render(<App />);
+    const btnName = getByText(/2/);
+    expect(btnName).toBeInTheDocument();
+  });
+
+  it('Should display button 3', () => {
+    const { getByText } = render(<App />);
+    const btnName = getByText(/3/);
+    expect(btnName).toBeInTheDocument();
+  });
+
+  it('Should display button 4', () => {
+    const { getByText } = render(<App />);
+    const btnName = getByText(/4/);
+    expect(btnName).toBeInTheDocument();
+  });
+
+  it('Should display button 5', () => {
+    const { getByText } = render(<App />);
+    const btnName = getByText(/5/);
+    expect(btnName).toBeInTheDocument();
+  });
+
+  it('Should display button 6', () => {
+    const { getByText } = render(<App />);
+    const btnName = getByText(/6/);
+    expect(btnName).toBeInTheDocument();
+  });
+
+  it('Should display button 7', () => {
+    const { getByText } = render(<App />);
+    const btnName = getByText(/7/);
+    expect(btnName).toBeInTheDocument();
+  });
+
+  it('Should display button 8', () => {
+    const { getByText } = render(<App />);
+    const btnName = getByText(/8/);
+    expect(btnName).toBeInTheDocument();
+  });
+
+  it('Should display button 8', () => {
+    const { getByText } = render(<App />);
+    const btnName = getByText(/9/);
     expect(btnName).toBeInTheDocument();
   });
 });
