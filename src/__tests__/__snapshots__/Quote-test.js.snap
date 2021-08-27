@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote renders correctly 1`] = `
+Array [
+  <div
+    id="navbar"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <div
+      className="nav"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home 
+      </a>
+      <a
+        href="/App"
+        onClick={[Function]}
+      >
+        Calculator 
+      </a>
+      <a
+        href="/Quote"
+        onClick={[Function]}
+      >
+        Quote 
+      </a>
+    </div>
+  </div>,
+  <blockquote>
+    Mathematics is about understanding.
+  </blockquote>,
+]
+`;

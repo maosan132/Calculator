@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div
+  className="app"
+>
+  <div
+    id="navbar"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <div
+      className="nav"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home 
+      </a>
+      <a
+        href="/App"
+        onClick={[Function]}
+      >
+        Calculator 
+      </a>
+      <a
+        href="/Quote"
+        onClick={[Function]}
+      >
+        Quote 
+      </a>
+    </div>
+  </div>
+  <div
+    className="Display"
+  >
+    0
+  </div>
+  <div
+    className="ButtonPanel"
+  >
+    <div
+      className="row1"
+    >
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="AC"
+      >
+        AC
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="+/-"
+      >
+        +/-
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="%"
+      >
+        %
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F5913E",
+          }
+        }
+        type="button"
+        value="/"
+      >
+        /
+      </button>
+    </div>
+    <div
+      className="row2"
+    >
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="7"
+      >
+        7
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="8"
+      >
+        8
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="9"
+      >
+        9
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F5913E",
+          }
+        }
+        type="button"
+        value="X"
+      >
+        X
+      </button>
+    </div>
+    <div
+      className="row3"
+    >
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="4"
+      >
+        4
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="5"
+      >
+        5
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="6"
+      >
+        6
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F5913E",
+          }
+        }
+        type="button"
+        value="-"
+      >
+        -
+      </button>
+    </div>
+    <div
+      className="row4"
+    >
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="1"
+      >
+        1
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="2"
+      >
+        2
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="3"
+      >
+        3
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F5913E",
+          }
+        }
+        type="button"
+        value="+"
+      >
+        +
+      </button>
+    </div>
+    <div
+      className="row5"
+    >
+      <button
+        className="zero-button"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="0"
+      >
+        0
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "initial",
+          }
+        }
+        type="button"
+        value="."
+      >
+        .
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F5913E",
+          }
+        }
+        type="button"
+        value="="
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;

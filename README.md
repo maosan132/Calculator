@@ -43,6 +43,9 @@ Download or clone the [repo here](https://github.com/maosan132/calculator.git), 
 * `npm run start`
 Your default browser should open the app at the localhost:3000
 
+Undergo the tests:
+* `npm test`
+
 ### Built With
 This project was built using these technologies.
 * HTML5
