@@ -1,5 +1,6 @@
 {
   "name": "calculator",
+  "homepage":"http://mauriciosantos.paternit.com/io/math-magicians/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
